@@ -12,7 +12,11 @@ toc: true
 #if you want to show in the document:**Due Date:** {{_due}}
 ---
 
+
+
 ## 0 - Setup
+
+
 
 ```{r setup, echo=FALSE}
 #--------------------->
@@ -72,6 +76,8 @@ knitr::opts_chunk$set(
 ```
 
 
+
+
 ## 1 - Edinburgh Traffic
 <div style="background-color:#f0f0f0; padding:10px; border-radius:5px; border:1px solid #87CEEB;">
 **Question 1**<br>
@@ -83,6 +89,8 @@ This plot visualizes the distribution of road accidents at different times of da
 
 One striking trend is the high number of fatalities on weekdays, in contrast to the weekend plot, which shows no visible fatalities.
 </div>
+
+
 ```{r label-me-1, echo=FALSE}
 #.csv file input
 accidents <- read_csv("data/accidents.csv", show_col_types = FALSE) 
@@ -122,6 +130,8 @@ g_1
 ```
 
 
+
+
 ## 2 - NYC marathon winners
 <div style="background-color:#f0f0f0; padding:10px; border-radius:5px; border:1px solid #87CEEB;">
 **Question 2a**<br>
@@ -132,6 +142,8 @@ Traditional thought holds that the histogram highlights a bimodal distribution, 
 
 However, the bimodal distribution pattern is still visible in the jittered data points of the box plot. That said, the histogram creates a more striking visual comparison among the data groupings, and their relative counts, especially when contrasted with the more abstract summary offered by the box plot.
 </div>
+
+
 
 ```{r label-me-2, echo=FALSE}
 #| message: false       # suppress messages (like read_csv column specs)
@@ -259,6 +271,8 @@ combined_plot
 
 ```
 
+
+
 <div style="background-color:#f0f0f0; padding:10px; border-radius:5px; border:1px solid #87CEEB;">
 **Question 2b**<br>
 <div style="background-color:#e0e0e0; padding:10px; border-radius:5px; border:1px solid #16DB65; display:flex; align-items:center; justify-content:center;">
@@ -266,6 +280,8 @@ combined_plot
 </div>
 Box plots are a great way to visualize distributions. Here, we see that the men's and women's time distributions slightly overlap, but only when considering some of the men's outliers. Plotting either alone would not allow us to see the bimodal distribution, plotting together however, allows us to see a distinctly bimodal distribution, where the two groups are largely separated.
 </div>
+
+
 
 ```{r label-me-2b, echo=FALSE}
 #| message: false       # suppress messages (like read_csv column specs)
@@ -319,6 +335,8 @@ g_boxplot_2b
 
 
 
+
+
 <div style="background-color:#f0f0f0; padding:10px; border-radius:5px; border:1px solid #87CEEB; margin:20px 0; width:100%; text-align:left;">
   **Question 2c**<br>
   <div style="background-color:#e0e0e0; padding:10px; border-radius:5px; border:1px solid #16DB65; display:flex; align-items:center; justify-content:center;">
@@ -328,6 +346,8 @@ In a large number of examples, redundancy is subjective—what one person consid
 Here, we can consolidate the data distributions onto a single plot, as they largely do not overlap. This approach eliminates the need to label both graphs separately. Furthermore, to leverage the visual tendency to perceive relative color differences, one of the groups can be changed to gray [cornsilk4]. By keeping our data the same and reducing the amount of ink used, we've effectively increased our data/ink ratio, which is the desired effect.
 
 </div>
+
+
 
 ```{r label-me-2c, echo=FALSE}
 #| message: false       # suppress messages (like read_csv column specs)
@@ -381,6 +401,8 @@ g_boxplot_overlay
 ```
 
 
+
+
 <div style="background-color:#f0f0f0; padding:10px; border-radius:5px; border:1px solid #87CEEB; margin:20px 0; width:100%; text-align:left;">
 
 **Question 2d**
@@ -389,6 +411,8 @@ g_boxplot_overlay
 </div>
 This plot clearly shows how the distribution of finish times has changed since 1970. It also highlights that most of the outliers for both gender groups occur before 1980. The bimodal distribution of the two groups is clearly visible, along with the minimal overlap between them. The general separation in mean finish times is evident in the vertical gap between the two data clusters.
 </div>
+
+
 
 ```{r label-me-2d, echo=FALSE}
 #| message: false       # suppress messages (like read_csv column specs)
@@ -438,6 +462,8 @@ g_2d <- ggplot(tb_Marathon_2d_v2_clean, aes(x = year, y = time_hrs, color = divi
 
 g_2d
 ```
+
+
 
 ## 3 - US counties
 <div style="background-color:#f0f0f0; padding:10px; border-radius:5px; border:1px solid #87CEEB; margin:20px 0; width:100%; text-align:left;">
@@ -512,6 +538,8 @@ as the horizontal graph.
   <li>I could not get my trend lines to extend as far as the given example(s).</li>
 </ul>
 </div>
+
+
 
 
 ```{r label-me-3c, echo=FALSE}
@@ -705,6 +733,8 @@ print((pA | pB) / (pC | pD) / (pE | pF) / (pG | pH))
 
 ```
 
+
+
 ## 4 - Rental apartments in SF
 <div style="background-color:#f0f0f0; padding:10px; border-radius:5px; border:1px solid #87CEEB; margin:20px 0; width:100%; text-align:left;">
 **Question 4a**<br>
@@ -718,6 +748,8 @@ However it should be noted that all distributions examined are skewed towards th
 This suggests that while income strongly influences credit card balance, the effect of student or marital status on that relationship is minimal. The key takeaway is that income is the dominant factor, with student and marital status having little impact on the strength of that relationship.
 
 </div>
+
+
 ```{r label-me-4a, echo=FALSE}
 #| message: false       # suppress messages (like read_csv column specs)
 #| results: hide
@@ -784,6 +816,8 @@ g4a
 ```
 
 
+
+
 <div style="background-color:#f0f0f0; padding:10px; border-radius:5px; border:1px solid #87CEEB; margin:20px 0; width:100%; text-align:left;">
 
 **Question 4b**<br>
@@ -803,6 +837,8 @@ Credit card balance is primarily influenced by income across all four categories
   <strong><br>Calculate credit utilization for all individuals in the credit data, and use it to recreate the following visualization.</strong>
 </div>
 </div>
+
+
 
 
 ```{r label-me-4c, echo=FALSE}
@@ -873,6 +909,8 @@ g4c
 ```
 
 
+
+
 <div style="background-color:#f0f0f0; padding:10px; border-radius:5px; border:1px solid #87CEEB;">
 
 **Question 4d**
@@ -914,6 +952,8 @@ For my individualization, I forced the city names to 'non overlap' and changed t
 <br>The non-overlapping caused a problem of the names then not all fitting in the graph window. This was solved with a call to:
 ggrepel::geom_text_repel(..)
 </div>
+
+
 ```{r label-me-5, echo=FALSE}
 #| message: false       # suppress messages (like read_csv column specs)
 #| results: hide
@@ -972,5 +1012,4 @@ g3 <- troop_plot / temp_plot + plot_layout(heights = c(5, 3))
 g3
 
 ```
-
 
