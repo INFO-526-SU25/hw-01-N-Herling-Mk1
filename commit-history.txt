@@ -1,0 +1,14 @@
+05e1d33 - Nathan Herling, Thu Jun 5 03:39:09 2025 -0700 : Re-polished since deadline was moved.
+bef6adb - Nathan Herling, Fri May 30 15:57:14 2025 -0700 : Final commit HW#1
+ee3be6e - Nathan Herling, Fri May 30 14:28:38 2025 -0700 : Everything but 3c
+3b3d689 - Nathan Herling, Fri May 30 04:21:34 2025 -0700 : more_fixes
+6680f43 - Nathan Herling, Fri May 30 03:36:54 2025 -0700 : 90% done
+40d1434 - Nathan Herling, Thu May 29 18:05:05 2025 -0700 : More work on format of 4a - general 'todos added'_v2
+e993c6d - Nathan Herling, Thu May 29 18:00:42 2025 -0700 : More work on format of 4a - general 'todos added'
+3139407 - Nathan Herling, Thu May 29 16:37:14 2025 -0700 : Removed a .ps1 file from repo
+b988f19 - Nathan Herling, Thu May 29 16:29:43 2025 -0700 : Working on 4a
+20f95da - Nathan Herling, Thu May 29 03:54:04 2025 -0700 : Buncha work: q1,q2,q3a,q3b
+5e029e8 - Nathan Herling, Wed May 28 16:35:24 2025 -0700 : revsision of q1_v2
+d9eab50 - Nathan Herling, Wed May 28 16:15:17 2025 -0700 : revsision of q1_v1
+85efa23 - Nathan Herling, Wed May 28 05:20:00 2025 -0700 : test commit-hw-01
+647bf80 - github-classroom[bot], Thu May 22 19:36:38 2025 +0000 : Initial commit
